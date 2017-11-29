@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .14rem;
+  font-style: normal;
+  font-weight: normal; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 625%; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+input, button {
+  outline: 0; }
+
+/*  input,textarea,button{
+ -webkit-appearance: none;
+ -moz-appearance: none ;
+ appearance: none ;
+} */
+button {
+  cursor: pointer; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  background: #808E9B; }
+
+.wrap {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: 0.4rem;
+  background: #393A3E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header a {
+    color: #fff;
+    padding: 0 .1rem;
+    font-size: .15rem; }
+    header a i.icon {
+      font-size: .16rem; }
+
+.text {
+  width: 96%;
+  height: 3.46rem;
+  background: #fff;
+  border-radius: .04rem;
+  margin: .6rem auto 0 auto; }
+  .text .txt {
+    width: 100%;
+    height: auto; }
+    .text .txt p {
+      width: 100%;
+      height: auto; }
+      .text .txt p img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        display: block; }
+    .text .txt h6 {
+      font-size: .2rem;
+      color: #3D4547;
+      text-align: center;
+      padding-top: .08rem; }
+  .text .list {
+    width: 100%;
+    height: auto; }
+    .text .list li {
+      width: 100%;
+      height: 0.8rem;
+      border-bottom: .01rem solid #878988;
+      display: flex;
+      align-items: center;
+      padding-top: .2rem;
+      padding-left: .05rem; }
+      .text .list li:nth-child(3) {
+        border-bottom: none; }
+        .text .list li:nth-child(3) button {
+          width: 94%;
+          height: 0.6rem;
+          background: #2FBA77;
+          text-align: center;
+          line-height: .6rem;
+          color: #fff;
+          border: 0;
+          border-radius: .03rem;
+          font-size: .16rem;
+          margin-left: 2%; }
+      .text .list li img {
+        width: 10%;
+        height: 40%; }
+      .text .list li input {
+        border: none; }
+
+/*# sourceMappingURL=style.css.map */

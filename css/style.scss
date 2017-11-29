@@ -1,0 +1,136 @@
+@charset "utf-8";
+*{
+  margin:0px;
+  padding:0px;
+  text-decoration:none;
+  box-sizing:border-box;
+  font-size:.14rem;
+  font-style:normal;
+  font-weight:normal;
+}
+ul,li{
+  list-style:none;
+}
+html{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size:625%;
+}
+img,div,body,html,ul,li,a{
+ -webkit-touch-callout: none;
+ }
+ input,button{
+ outline:0;
+
+ }
+/*  input,textarea,button{
+ -webkit-appearance: none;
+ -moz-appearance: none ;
+ appearance: none ;
+} */
+ button{
+ cursor:pointer;
+ }
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+@mixin num($w:100%,$h:auto){
+  width:$w;
+  height:$h;
+}
+%text{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+%texts{
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  word-break:break-all;
+  -webkit-line-clamp:2;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+html,body,.wrap{
+  @include num(100%,100%);
+  background:#808E9B;
+}
+@mixin flex($j:center){
+  display:flex;
+  justify-content:$j;
+  align-items:center;
+}
+.wrap{
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+header{
+    @include num($h:.4rem);
+    background:#393A3E;
+    @include flex($j:space-between);
+    a{
+    color:#fff;
+    padding:0 .1rem;
+    font-size:.15rem;
+    i.icon{
+    font-size:.16rem;
+    }
+    }
+}
+.text{
+    @include num($w:96%,$h:3.46rem);
+    background:#fff;
+    border-radius:.04rem;
+    margin:.6rem auto 0 auto;
+    .txt{
+    @include num(100%,auto);
+    p{
+    @include num(100%,auto);
+    img{
+    @include num(50%,auto);
+    margin:0 auto;
+    display:block;
+    }
+    }
+    h6{
+    font-size:.2rem;
+    color:#3D4547;
+    text-align:center;
+    padding-top:.08rem;
+    }
+    }
+    .list{
+    @include num();
+    li{
+    @include num($h:.8rem);
+    border-bottom:.01rem solid #878988;
+    &:nth-child(3){
+    border-bottom:none;
+    button{
+    @include num(94%,.6rem);
+    background:#2FBA77;
+    text-align:center;
+    line-height:.6rem;
+    color:#fff;
+    border:0;
+    border-radius:.03rem;
+    font-size:.16rem;
+    margin-left:2%;
+    }
+    }
+    display:flex;
+    align-items:center;
+    padding-top:.2rem;
+    padding-left:.05rem;
+    img{
+    @include num($w:10%,$h:40%);
+    }
+    input{
+    border:none;
+    }
+    }
+    }
+}
